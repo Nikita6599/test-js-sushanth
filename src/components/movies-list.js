@@ -11,7 +11,7 @@ export function MoviesList(props) {
       <thead>
         <tr>
           <td></td>
-          <td>Year</td>
+          <td>Release Year</td>
           <td>Title</td>
           <td>Price</td>
         </tr>
@@ -21,7 +21,7 @@ export function MoviesList(props) {
           movies.map((movie, index) => {
             return (
               <tr key={index}>
-                <td><img src={movie.image} style={{height: '150px'}} /></td>
+                <td><img src={movie.image} style={{height: '150px', maxWidth: '100px'}} /></td>
                 <td>{movie.releaseYear}</td>
                 <td>{movie.title}</td>
                 <td>{`$${movie.price}`}</td>
